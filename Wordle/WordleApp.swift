@@ -2,31 +2,16 @@
 //  WordleApp.swift
 //  Wordle
 //
-//  Created by Cosette Tabucol on 4/25/25.
-//
 
 import SwiftUI
 import SwiftData
 
+// Main entry point of the app
 @main
 struct WordleApp: App {
-    var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            Item.self,
-        ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
-
-        do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
-        } catch {
-            fatalError("Could not create ModelContainer: \(error)")
-        }
-    }()
-
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WordleBoardView() // Launches the WordleBoardView as the first screen
         }
-        .modelContainer(sharedModelContainer)
     }
 }

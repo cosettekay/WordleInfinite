@@ -2,8 +2,7 @@
 //  ContentView.swift
 //  Wordle
 //
-//  Created by Cosette Tabucol on 4/25/25.
-//
+
 
 import SwiftUI
 import SwiftData

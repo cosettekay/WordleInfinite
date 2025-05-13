@@ -24,7 +24,11 @@ final class WordleUITestsLaunchTests: XCTestCase {
 
         // Insert steps here to perform after app launch but before taking a screenshot,
         // such as logging into a test account or navigating somewhere in the app
-
+        
+        // Check for Matrix (6*5)
+        // Check for Light/Dark Mode Picker
+        // Check for Internal Keyboard
+        // Check for New Game Button
         let attachment = XCTAttachment(screenshot: app.screenshot())
         attachment.name = "Launch Screen"
         attachment.lifetime = .keepAlways

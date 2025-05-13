@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9F0C72D02DD31AE600114CCA /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 9F0C72CF2DD31ADF00114CCA /* .gitignore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		9FF49DE82DBC39E2009827DA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,25 +28,42 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9FF49DD72DBC39E0009827DA /* Wordle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wordle.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9FF49DE72DBC39E2009827DA /* WordleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9FF49DF12DBC39E2009827DA /* WordleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F0C72CF2DD31ADF00114CCA /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		9FF49DD72DBC39E0009827DA /* Wordle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Wordle.app; path = /Users/cosette/CPPomona/cs4080/Wordle/build/Debug/Wordle.app; sourceTree = "<absolute>"; };
+		9FF49DE72DBC39E2009827DA /* WordleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = WordleTests.xctest; path = /Users/cosette/CPPomona/cs4080/Wordle/build/Debug/Wordle.app/Contents/PlugIns/WordleTests.xctest; sourceTree = "<absolute>"; };
+		9FF49DF12DBC39E2009827DA /* WordleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = WordleUITests.xctest; path = "/Users/cosette/CPPomona/cs4080/Wordle/build/Debug/WordleUITests-Runner.app/Contents/PlugIns/WordleUITests.xctest"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		9F0C72E12DD320F400114CCA /* Exceptions for "UnitTest" folder in "WordleTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				WordleTests/WordleTests.swift,
+			);
+			target = 9FF49DE62DBC39E2009827DA /* WordleTests */;
+		};
+		9F0C72E22DD320F400114CCA /* Exceptions for "UnitTest" folder in "WordleUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				WordleTests/WordleTests.swift,
+			);
+			target = 9FF49DF02DBC39E2009827DA /* WordleUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		9F0C72D82DD3205100114CCA /* UnitTest */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				9F0C72E12DD320F400114CCA /* Exceptions for "UnitTest" folder in "WordleTests" target */,
+				9F0C72E22DD320F400114CCA /* Exceptions for "UnitTest" folder in "WordleUITests" target */,
+			);
+			path = UnitTest;
+			sourceTree = "<group>";
+		};
 		9FF49DD92DBC39E0009827DA /* Wordle */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Wordle;
-			sourceTree = "<group>";
-		};
-		9FF49DEA2DBC39E2009827DA /* WordleTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = WordleTests;
-			sourceTree = "<group>";
-		};
-		9FF49DF42DBC39E2009827DA /* WordleUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = WordleUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,21 +96,10 @@
 		9FF49DCE2DBC39E0009827DA = {
 			isa = PBXGroup;
 			children = (
+				9F0C72CF2DD31ADF00114CCA /* .gitignore */,
 				9FF49DD92DBC39E0009827DA /* Wordle */,
-				9FF49DEA2DBC39E2009827DA /* WordleTests */,
-				9FF49DF42DBC39E2009827DA /* WordleUITests */,
-				9FF49DD82DBC39E0009827DA /* Products */,
+				9F0C72D82DD3205100114CCA /* UnitTest */,
 			);
-			sourceTree = "<group>";
-		};
-		9FF49DD82DBC39E0009827DA /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9FF49DD72DBC39E0009827DA /* Wordle.app */,
-				9FF49DE72DBC39E2009827DA /* WordleTests.xctest */,
-				9FF49DF12DBC39E2009827DA /* WordleUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,9 +140,6 @@
 			dependencies = (
 				9FF49DE92DBC39E2009827DA /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				9FF49DEA2DBC39E2009827DA /* WordleTests */,
-			);
 			name = WordleTests;
 			packageProductDependencies = (
 			);
@@ -154,7 +161,7 @@
 				9FF49DF32DBC39E2009827DA /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				9FF49DF42DBC39E2009827DA /* WordleUITests */,
+				9F0C72D82DD3205100114CCA /* UnitTest */,
 			);
 			name = WordleUITests;
 			packageProductDependencies = (
@@ -196,7 +203,7 @@
 			mainGroup = 9FF49DCE2DBC39E0009827DA;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 9FF49DD82DBC39E0009827DA /* Products */;
+			productRefGroup = 9FF49DCE2DBC39E0009827DA;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -212,6 +219,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F0C72D02DD31AE600114CCA /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
